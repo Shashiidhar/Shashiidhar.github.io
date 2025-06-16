@@ -1,48 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shashi's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shashi | AI/ML Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Shashi!</h1>
-    <p>Aspiring AI/ML Engineer | Python | Machine Learning Enthusiast</p>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am passionate about solving real-world problems using Machine Learning and Data Science.</p>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="intro">
+      <h1>Hi, I'm <span>Shashi</span></h1>
+      <h2 id="typing"></h2>
+      <p>I am passionate about solving real-life problems using AI/ML.</p>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+    <div class="profile-pic">
+      <img src="images/pic.JPG" alt="Shashi Profile Photo">
+    </div>
   </section>
 
-  <section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an AI/ML enthusiast focusing on building intelligent solutions. I enjoy tackling complex problems and creating innovative technology-driven answers.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Python, C, Java</li>
-      <li>Machine Learning: Scikit-Learn, TensorFlow</li>
-      <li>Tools: Git, Jupyter Notebook</li>
+      <li>Python</li>
+      <li>TensorFlow</li>
+      <li>Scikit-Learn</li>
+      <li>Pandas</li>
+      <li>Deep Learning</li>
+      <li>Machine Learning</li>
     </ul>
   </section>
 
-  <section>
+  <!-- Projects Section -->
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Breast Cancer Prediction:</strong> ML model to predict cancer using SVM.</li>
-      <li><strong>Handwritten Digit Recognition:</strong> Deep learning with TensorFlow/Keras.</li>
-    </ul>
+    <div class="project">
+      <h3>Breast Cancer Detection</h3>
+      <p>ML model to predict breast cancer risk using health data.</p>
+      <a href="#">GitHub Link</a>
+    </div>
+    <div class="project">
+      <h3>Spam News Detection</h3>
+      <p>NLP model to detect spam and fake news articles.</p>
+      <a href="#">GitHub Link</a>
+    </div>
   </section>
 
-  <section>
+  <!-- Certifications Section -->
+  <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>IBM AI Engineering (Coursera)</li>
-      <li>Google Data Analytics</li>
+      <li>TensorFlow Developer Certificate</li>
+      <li>IBM Machine Learning Certificate</li>
     </ul>
   </section>
 
-  <footer>
-    <p>Contact: yourname@gmail.com | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
-  </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: example@gmail.com</p>
+    <p>GitHub: <a href="#">github.com/example</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/example</a></p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
